@@ -1,0 +1,62 @@
+.header {
+  padding: 20px 80px;
+  &__container {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  &__picture {
+    margin-right: 15px;
+    cursor: pointer;
+    & img {
+    }
+  }
+
+  &__burgerMenu {
+    cursor: pointer;
+    & img {}
+  }
+}
+
+/*Чтобы при первой загрузке страницы небыло анимации потухания
+бургер меню(из-за useEffect который функцию вызывает),то opacity 0 ставим  по умолчанию тут*/
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  padding: 15px 5px;
+  margin-left: 15px;
+  width: 200px;
+  height: 100%;
+  background-color: orange;
+  overflow: auto;
+  z-index: 1;
+  border-radius: 32px;
+  transition: 0.3s ease 0s;
+  &__list {
+    &>*:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+  &__link {
+    user-select: inherit;
+    color: #000;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &_active {
+      text-decoration: underline;
+    }
+  }
+}

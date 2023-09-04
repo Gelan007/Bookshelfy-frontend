@@ -1,0 +1,22 @@
+.books {
+  padding: 5px 30px;
+}
+
+.topBlock {
+  display: flex;
+  align-items: center;
+}
+.topBlock__search {
+  flex: 0 0 22%;
+}
+.topBlock__controlButtonsBlock {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 40px;
+}
+.topBlock__controlButtonsBlock > * {
+  margin-left: 6px;
+}
+
+/*# sourceMappingURL=Books.module.css.map */

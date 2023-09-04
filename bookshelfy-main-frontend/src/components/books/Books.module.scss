@@ -1,0 +1,24 @@
+.books {
+  padding: 5px 30px;
+}
+.topBlock {
+  display: flex;
+  align-items: center;
+
+  &__search {
+    flex: 0 0 22%;
+  }
+
+  &__controlButtonsBlock {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 40px;
+
+    &>* {
+      margin-left: 6px;
+    }
+  }
+}
+
+.mainBlock {}

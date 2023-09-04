@@ -1,0 +1,35 @@
+.inputGreySearch {
+  background: #FAFAFA;
+  border: 1px solid #E4E4E4;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  font-family: inherit;
+  outline: none;
+}
+
+.inputGreySearch::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: inherit;
+  opacity: 0.6;
+}
+
+.inputGreySearch {
+  height: 50px;
+  padding: 0 25px 0 10px;
+}
+.inputGreySearch:focus {
+  outline: 1px solid dodgerblue;
+}
+.inputGreySearch__magnifier {
+  background-repeat: no-repeat;
+  background-position: 99%;
+}
+
+/*# sourceMappingURL=Inputs.module.css.map */
