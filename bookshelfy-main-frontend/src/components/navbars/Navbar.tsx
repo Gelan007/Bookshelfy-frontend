@@ -34,7 +34,7 @@ const Navbar:React.FC<NavbarProps> = ({menuBody, toggleBurgerMenu, burgerMenuSta
                         </li>
                         <li className={s.menu__item}>
                             <NavLink to={HOME_ROUTE} className={({isActive}) => isActive ? `${s.menu__link} ${s.menu__link_active}` : s.menu__link}>
-                                Мой кабинет
+                                Личный кабинет
                             </NavLink>
                         </li>
                     </ul>

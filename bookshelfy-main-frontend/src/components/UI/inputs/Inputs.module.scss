@@ -39,3 +39,17 @@
     background-position: 99%;
   }
 }
+
+.inputGrey {
+  @extend %inputGreyMain;
+  height: 55px;
+  text-align: center;
+
+  &::placeholder {
+    @extend %inputGreyPlaceholder;
+  }
+
+  &:focus {
+    outline: 1px solid dodgerblue;
+  }
+}

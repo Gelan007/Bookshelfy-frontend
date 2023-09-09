@@ -1,7 +1,14 @@
-import {BOOKS_BOOK_PROFILE_ROUTE, BOOKS_LIST_ROUTE, BOOKS_ROUTE, HOME_ROUTE} from "./consts";
+import {
+    BOOKS_BOOK_PROFILE_ROUTE,
+    BOOKS_LIST_ROUTE,
+    BOOKS_ROUTE,
+    HOME_ROUTE,
+    USER_ACCOUNT_PERSONAL_DATA_ROUTE
+} from "./consts";
 import BooksPage from "../../pages/books/BooksPage";
 import Home from "../../pages/home/Home";
 import BooksContainer from "../../components/books/BooksContainer";
+import UserAccountContainer from "../../components/userAccount/UserAccountContainer";
 
 
 export const publicRoutes = [
@@ -20,5 +27,9 @@ export const authRoutes = [
     {
         path: BOOKS_BOOK_PROFILE_ROUTE,
         Component: BooksContainer
+    },
+    {
+        path: USER_ACCOUNT_PERSONAL_DATA_ROUTE,
+        Component: UserAccountContainer
     }
 ]
