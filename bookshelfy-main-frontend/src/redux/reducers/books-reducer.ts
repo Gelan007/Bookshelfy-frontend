@@ -10,10 +10,6 @@ const SET_SELECTED_BOOK_ID = 'SET_SELECTED_BOOK_ID'
 
 
 
-/*export type InitialStateType = {
-    allBooks: Array<AllBooksType> | null
-}*/
-
 let initialState = {
     allBooks: [] as Array<BookType> | null,
     selectedBook: {} as BookType | null,
