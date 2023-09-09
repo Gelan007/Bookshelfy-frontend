@@ -4,7 +4,7 @@ import logo from "../../assets/images/navbar/logo.svg";
 import burgerMenu from "../../assets/images/navbar/burger-menu.svg";
 import burgerMenuActive from "../../assets/images/navbar/burger-menu-second.svg";
 import {NavLink} from "react-router-dom";
-import {BOOKS_ROUTE, HOME_ROUTE} from "../../utils/routes/consts";
+import {BOOKS_LIST_ROUTE, BOOKS_ROUTE, HOME_ROUTE} from "../../utils/routes/consts";
 
 interface NavbarProps {
     menuBody: null | RefObject<HTMLElement>
@@ -28,7 +28,7 @@ const Navbar:React.FC<NavbarProps> = ({menuBody, toggleBurgerMenu, burgerMenuSta
                 <nav className={`${s.header__menu} ${s.menu}`} ref={menuBody}>
                     <ul className={s.menu__list}>
                         <li className={s.menu__item}>
-                            <NavLink to={BOOKS_ROUTE} className={({isActive}) => isActive ? `${s.menu__link} ${s.menu__link_active}` : s.menu__link}>
+                            <NavLink to={BOOKS_LIST_ROUTE} className={({isActive}) => isActive ? `${s.menu__link} ${s.menu__link_active}` : s.menu__link}>
                                 Книжки
                             </NavLink>
                         </li>
