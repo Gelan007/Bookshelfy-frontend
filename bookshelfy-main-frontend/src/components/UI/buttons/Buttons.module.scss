@@ -1,14 +1,19 @@
-.buttonGreen {
+%buttonStyles {
   text-align: center;
   width: 100%;
   height: 45px;
   padding: 0 6px;
-  background: #64C641;
-  box-shadow: 0px 30px 20px -20px rgba(100, 198, 65, 0.6);
   border-radius: 15px;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+}
+
+
+.buttonGreen {
+  @extend %buttonStyles;
+  background: #64C641;
+  box-shadow: 0px 30px 20px -20px rgba(100, 198, 65, 0.6);
   color: #FFFFFF;
 
   &:hover {
@@ -19,15 +24,8 @@
 
 
 .buttonBlue {
-  text-align: center;
-  width: 100%;
-  height: 45px;
-  padding: 0 6px;
+  @extend %buttonStyles;
   background: #577399;
-  border-radius: 15px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
   color: #FFFFFF;
 
   &:hover {
@@ -57,5 +55,18 @@
     & span {
       text-decoration: underline;
     }
+  }
+}
+
+
+.buttonLogin {
+  @extend %buttonStyles;
+  //background: #865B38;
+  background: #9D764F;
+  //background: #B59369;
+  color: #FFFFFF;
+
+  &:hover {
+    background: rgb(181, 148, 105);
   }
 }

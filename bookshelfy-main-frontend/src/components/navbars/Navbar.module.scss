@@ -60,3 +60,27 @@
     }
   }
 }
+
+
+.login {
+  align-self: center;
+  margin-left: auto;
+  margin-right: 40px;
+
+  &__userAccountIcon {
+    img {
+      cursor: pointer;
+      &:hover {
+        filter: drop-shadow(0px 4px 4px rgba(108, 75, 27, 0.45));
+      }
+    }
+
+    &_active {
+      filter: drop-shadow(0px 4px 4px rgba(108, 75, 27, 0.45));
+    }
+  }
+
+  &__buttonLogin {
+    min-width: 110px;
+  }
+}

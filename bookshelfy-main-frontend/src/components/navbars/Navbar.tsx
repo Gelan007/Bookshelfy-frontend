@@ -1,19 +1,23 @@
 import React, {RefObject} from 'react';
 import s from "./Navbar.module.scss";
 import logo from "../../assets/images/navbar/logo.svg";
+import userAccountLightBrown from "../../assets/images/navbar/personalAccountLightBrown.svg";
+import userAccountBrown from "../../assets/images/navbar/personalAccountBrown.svg";
 import burgerMenu from "../../assets/images/navbar/burger-menu.svg";
 import burgerMenuActive from "../../assets/images/navbar/burger-menu-second.svg";
 import {NavLink} from "react-router-dom";
 import {BOOKS_LIST_ROUTE, BOOKS_ROUTE, HOME_ROUTE, USER_ACCOUNT_PERSONAL_DATA_ROUTE} from "../../utils/routes/consts";
+import ButtonLogin from "../UI/buttons/ButtonLogin";
 
 interface NavbarProps {
     menuBody: null | RefObject<HTMLElement>
     toggleBurgerMenu: () => void
     burgerMenuState: boolean
+    isAuth: boolean
 }
 
 
-const Navbar:React.FC<NavbarProps> = ({menuBody, toggleBurgerMenu, burgerMenuState}) => {
+const Navbar:React.FC<NavbarProps> = ({menuBody, toggleBurgerMenu, burgerMenuState, isAuth = false}) => {
     return (
         <header className={s.header}>
             <div className={s.header__container}>
@@ -39,6 +43,18 @@ const Navbar:React.FC<NavbarProps> = ({menuBody, toggleBurgerMenu, burgerMenuSta
                         </li>
                     </ul>
                 </nav>
+                <div className={s.login}>
+                    {isAuth ?
+                        <NavLink to={USER_ACCOUNT_PERSONAL_DATA_ROUTE}
+                                 className={({isActive}) => isActive ? `${s.login__userAccountIcon} ${s.login__userAccountIcon_active}` : s.login__userAccountIcon}>
+                            <img src={userAccountBrown} alt="user Account"/>
+                        </NavLink>
+                        :
+                        <div className={s.login__buttonLogin}>
+                            <ButtonLogin>Войти</ButtonLogin>
+                        </div>
+                    }
+                </div>
             </div>
         </header>
     );
