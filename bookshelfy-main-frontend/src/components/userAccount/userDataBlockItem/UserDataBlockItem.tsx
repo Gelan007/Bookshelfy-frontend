@@ -1,5 +1,5 @@
 import React from 'react';
-import s from "../UserAccount.module.scss";
+import s from "./UserDataBlockItem.module.scss";
 import InputGrey from "../../UI/inputs/InputGrey";
 
 

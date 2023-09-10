@@ -13,7 +13,7 @@ type UserAccountProps = MapStateProps & MapDispatchProps & OwnProps
 
 const UserAccountContainer:React.FC<UserAccountProps> = (props) => {
     return (
-        <UserAccount isUser={true} firstName={''} lastName={''}/>
+        <UserAccount isUser={true} firstName={'Ivan'} lastName={'Williams'}/>
     );
 };
 

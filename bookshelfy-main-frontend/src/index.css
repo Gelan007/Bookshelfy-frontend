@@ -53,6 +53,7 @@ html, body {
   color:#000000;
   font-family: 'Nunito', sans-serif;
   max-width: 1700px;
+  background-color: antiquewhite;
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/

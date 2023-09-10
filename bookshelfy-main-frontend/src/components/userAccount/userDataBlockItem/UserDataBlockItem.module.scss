@@ -1,0 +1,16 @@
+.userDataBlock__item {
+  display: flex;
+  flex-direction: column;
+  //flex: 0 0 330px;
+  width: 330px;
+  &__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 110%;
+    color: #000000;
+  }
+  &>*:not(:last-child) {
+    margin: 0 0 8px 20px;
+  }
+  &__input {}
+}

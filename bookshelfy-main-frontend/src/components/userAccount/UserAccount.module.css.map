@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"UserAccount.module.css"}
+{"version":3,"sourceRoot":"","sources":["UserAccount.module.scss"],"names":[],"mappings":"AAAA;EACE;;AACA;EACE;EACA;EACA;;;AAIJ;EACE;EACA;;AACA;EACE;;AACA;EACE;;AAEF;EACE;EACA;EACA;EACA;EACA;;AAEF;EACE;EACA;EACA;EACA;EACA;;;AAMN;EACE;;AACA;EACE;;AACA;EACE;;AAEF;EACE;;;AAMN;EACE;;AACA;EACE;EACA;;;AAGJ;EACE;EACA","file":"UserAccount.module.css"}

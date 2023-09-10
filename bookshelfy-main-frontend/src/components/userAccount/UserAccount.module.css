@@ -1,3 +1,61 @@
+.userAccount {
+  padding: 5px;
+}
+.userAccount__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.avatarBlock {
+  display: flex;
+  align-items: center;
+}
+.avatarBlock__text {
+  margin-left: 10px;
+}
+.avatarBlock__text > *:not(:last-child) {
+  margin-bottom: 7px;
+}
+.avatarBlock__text__fullName {
+  margin-right: 8px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 110%;
+  color: #000000;
+}
+.avatarBlock__text span {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 110%;
+  color: #000000;
+  opacity: 0.7;
+}
+
+.userDataBlock {
+  margin-top: 45px;
+}
+.userDataBlock__row {
+  display: flex;
+}
+.userDataBlock__row > *:not(:last-child) {
+  margin-right: 25px;
+}
+.userDataBlock__row > * {
+  margin-bottom: 30px;
+}
+
+.buttonSave {
+  margin: 20px 0 0 0;
+}
+.buttonSave__container {
+  width: 220px;
+  margin: 0 auto;
+}
+
+.buttonExit {
+  align-self: flex-start;
+  margin: 10px 0 20px 60px;
+}
 
 /*# sourceMappingURL=UserAccount.module.css.map */

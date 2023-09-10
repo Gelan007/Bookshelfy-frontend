@@ -1,3 +1,16 @@
-
+.userDataBlock__item {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+}
+.userDataBlock__item__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 110%;
+  color: #000000;
+}
+.userDataBlock__item > *:not(:last-child) {
+  margin: 0 0 8px 20px;
+}
 
 /*# sourceMappingURL=UserDataBlockItem.module.css.map */

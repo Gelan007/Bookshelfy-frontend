@@ -4,6 +4,9 @@ import InputGrey from "../UI/inputs/InputGrey";
 import UserDataBlockItem from "./userDataBlockItem/UserDataBlockItem";
 import ButtonGreen from "../UI/buttons/ButtonGreen";
 import ButtonExit from "../UI/buttons/ButtonExit";
+import AvatarPhoto from "./avatarPhoto/AvatarPhoto";
+
+
 
 type UserAccountProps = {
     isUser: boolean
@@ -13,16 +16,16 @@ type UserAccountProps = {
 
 const UserAccount:React.FC<UserAccountProps> = ({isUser, firstName = "Noname", lastName}) => {
     const buttonHandler = () => {}
+    const handleFileChange = () => {}
+
 
     return (
         <div className={s.userAccount}>
             <div className={s.userAccount__container}>
                 <div className={s.avatarBlock}>
-                    <div className={s.avatarBlock__avatar}>
-                        <img src="" alt=""/>
-                    </div>
+                    <AvatarPhoto avatarPhoto={null} handleFileChange={handleFileChange}/>
                     <div className={s.avatarBlock__text}>
-                        <span>{`${firstName} ${lastName}`}</span>
+                        <div className={s.avatarBlock__text__fullName}>{`${firstName} ${lastName}`}</div>
                         {isUser ? <span>Без подписки</span> : <span>Администратор</span>}
                     </div>
                 </div>
