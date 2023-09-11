@@ -70,3 +70,20 @@
     background: rgb(181, 148, 105);
   }
 }
+
+.buttonAuthorization {
+  @extend %buttonStyles;
+  border-radius: 30px;
+  background: #004AAD;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #FFD166;
+  height: 50px;
+
+  &:hover {
+    background: #FFD166;
+    color: #004AAD;
+  }
+}

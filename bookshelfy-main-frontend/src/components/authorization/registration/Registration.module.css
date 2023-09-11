@@ -1,0 +1,15 @@
+.registration {
+  background: lightgray 0% 0%/100px 100px repeat, #004AAD;
+  height: 100vh;
+  width: 100%;
+  padding: 50px 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.registration__container {
+  margin: 0 auto;
+  width: 490px;
+}
+
+/*# sourceMappingURL=Registration.module.css.map */

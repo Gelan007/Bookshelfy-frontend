@@ -28,7 +28,7 @@ const NavbarContainer: React.FC = () => {
 
     return (
         <Navbar menuBody={menuBody} toggleBurgerMenu={toggleBurgerMenu}
-                burgerMenuState={burgerMenuState} isAuth={true}/>
+                burgerMenuState={burgerMenuState} isAuth={false}/>
     );
 };
 

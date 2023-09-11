@@ -1,4 +1,4 @@
-.buttonLogin, .buttonBlue, .buttonGreen {
+.buttonAuthorization, .buttonLogin, .buttonBlue, .buttonGreen {
   text-align: center;
   width: 100%;
   height: 45px;
@@ -53,6 +53,21 @@
 }
 .buttonLogin:hover {
   background: rgb(181, 148, 105);
+}
+
+.buttonAuthorization {
+  border-radius: 30px;
+  background: #004AAD;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #FFD166;
+  height: 50px;
+}
+.buttonAuthorization:hover {
+  background: #FFD166;
+  color: #004AAD;
 }
 
 /*# sourceMappingURL=Buttons.module.css.map */

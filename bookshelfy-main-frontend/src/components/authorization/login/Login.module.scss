@@ -1,0 +1,8 @@
+@import "../general/Authorization.module.scss";
+
+.login {
+  @extend %authorizationMain;
+  &__container {
+    @extend %authorizationContainer;
+  }
+}

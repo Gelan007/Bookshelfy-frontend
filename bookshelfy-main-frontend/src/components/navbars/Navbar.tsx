@@ -6,7 +6,13 @@ import userAccountBrown from "../../assets/images/navbar/personalAccountBrown.sv
 import burgerMenu from "../../assets/images/navbar/burger-menu.svg";
 import burgerMenuActive from "../../assets/images/navbar/burger-menu-second.svg";
 import {NavLink} from "react-router-dom";
-import {BOOKS_LIST_ROUTE, BOOKS_ROUTE, HOME_ROUTE, USER_ACCOUNT_PERSONAL_DATA_ROUTE} from "../../utils/routes/consts";
+import {
+    BOOKS_LIST_ROUTE,
+    BOOKS_ROUTE,
+    HOME_ROUTE,
+    LOGIN_ROUTE,
+    USER_ACCOUNT_PERSONAL_DATA_ROUTE
+} from "../../utils/routes/consts";
 import ButtonLogin from "../UI/buttons/ButtonLogin";
 
 interface NavbarProps {
@@ -50,9 +56,10 @@ const Navbar:React.FC<NavbarProps> = ({menuBody, toggleBurgerMenu, burgerMenuSta
                             <img src={userAccountBrown} alt="user Account"/>
                         </NavLink>
                         :
-                        <div className={s.login__buttonLogin}>
+                        <NavLink to={LOGIN_ROUTE}
+                                 className={s.login__buttonLogin}>
                             <ButtonLogin>Войти</ButtonLogin>
-                        </div>
+                        </NavLink>
                     }
                 </div>
             </div>

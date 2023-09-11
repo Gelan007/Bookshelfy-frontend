@@ -1,0 +1,31 @@
+.inputAuthorization {
+  border-radius: 10px;
+  background: #E2E2E2;
+  border: 1px solid #E4E4E4;
+  color: #7e7e7e;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  outline: none;
+  height: 50px;
+  padding: 0 50px 0 10px;
+}
+.inputAuthorization::placeholder {
+  color: #A6A6A6;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: inherit;
+}
+.inputAuthorization:focus {
+  outline: 1px solid dodgerblue;
+}
+.inputAuthorization__icon {
+  background-repeat: no-repeat;
+  background-position: 97%;
+}
+
+/*# sourceMappingURL=Input.module.css.map */
